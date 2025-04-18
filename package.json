@@ -6,7 +6,12 @@
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "test:login": "playwright test tests/login.spec.ts",
+    "test:inventory": "playwright test tests/inventory.spec.ts",
+    "test:cart": "playwright test tests/cart.spec.ts",
+    "test:checkout": "playwright test tests/checkout.spec.ts",
+    "test:file": "playwright test"
   },
   "keywords": [
     "playwright",
