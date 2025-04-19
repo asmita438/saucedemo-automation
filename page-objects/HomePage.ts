@@ -1,5 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test';
-import { Header } from './Components/Header';
+import { Header } from '@components/Header';
 
 export class HomePage {
     readonly page: Page;
