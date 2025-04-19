@@ -11,6 +11,7 @@
     "test:inventory": "playwright test tests/inventory.spec.ts",
     "test:cart": "playwright test tests/cart.spec.ts",
     "test:checkout": "playwright test tests/checkout.spec.ts",
+    "test:fixture": "playwright test tests/fixture-example.spec.ts",
     "test:file": "playwright test"
   },
   "keywords": [
