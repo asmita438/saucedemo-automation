@@ -1,13 +1,13 @@
-import { test, expect } from '../fixtures/testData';
-import { LoginPage } from '../page-objects/LoginPage';
-import { HomePage } from '../page-objects/HomePage';
-import { CartPage } from '../page-objects/CartPage';
-import { CheckoutPage } from '../page-objects/CheckoutPage';
-import { Header } from '../page-objects/Components/Header';
+import { test, expect } from '@fixtures/testData';
+import { LoginPage } from '@pages/LoginPage';
+import { HomePage } from '@pages/HomePage';
+import { CartPage } from '@pages/CartPage';
+import { CheckoutPage } from '@pages/CheckoutPage';
+import { Header } from '@components/Header';
 
 test.describe('Shopping Cart Functionality', () => {
   test.beforeEach(async ({ page, testData }) => {
-    // Login and add an item to cart before each test
+    // Login and add item to cart before each test
     const loginPage = new LoginPage(page);
     const inventoryPage = new HomePage(page);
     const { username, password } = testData.users.standard;
@@ -27,7 +27,7 @@ test.describe('Shopping Cart Functionality', () => {
     await header.clickShoppingCart();
     await cartPage.waitForPageLoad();
     
-    // Verify the item is in the cart
+    // Verify that the item is in the cart
     expect(await cartPage.isItemInCart(productName)).toBeTruthy();
     expect(await cartPage.getCartItemsCount()).toBe(1);
   });
@@ -57,7 +57,7 @@ test.describe('Shopping Cart Functionality', () => {
     await cartPage.waitForPageLoad();
     await cartPage.proceedToCheckout();
     
-    // Verify navigation to checkout page
+    
     await checkoutPage.waitForCheckoutStepOne();
   });
 });

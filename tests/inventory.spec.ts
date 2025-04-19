@@ -1,7 +1,7 @@
-import { test, expect } from '../fixtures/testData';
-import { LoginPage } from '../page-objects/LoginPage';
-import { HomePage } from '../page-objects/HomePage';
-import { CartPage } from '../page-objects/CartPage';
+import { test, expect } from '@fixtures/testData';
+import { LoginPage } from '@pages/LoginPage';
+import { HomePage } from '@pages/HomePage';
+
 
 test.describe('Inventory Page Functionality', () => {
     test.beforeEach(async ({ page, testData }) => {

@@ -1,9 +1,9 @@
-import { test, expect } from '../fixtures/testData';
-import { LoginPage } from '../page-objects/LoginPage';
-import { HomePage } from '../page-objects/HomePage';
-import { CartPage } from '../page-objects/CartPage';
-import { CheckoutPage } from '../page-objects/CheckoutPage';
-import { Header } from '../page-objects/Components/Header';
+import { test, expect } from '@fixtures/testData';
+import { LoginPage } from '@pages/LoginPage';
+import { HomePage } from '@pages/HomePage';
+import { CartPage } from '@pages/CartPage';
+import { CheckoutPage } from '@pages/CheckoutPage';
+import { Header } from '@components/Header';
 
 test.describe('Checkout Process', () => {
   test.beforeEach(async ({ page, testData }) => {

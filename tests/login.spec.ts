@@ -1,6 +1,6 @@
-import { test, expect } from '../fixtures/testData';
-import { LoginPage } from '../page-objects/LoginPage';
-import { HomePage } from '../page-objects/HomePage';
+import { test, expect } from '@fixtures/testData';
+import { LoginPage } from '@pages/LoginPage';
+import { HomePage } from '@pages/HomePage';
 
 
 test.describe('Login Functionality', () => {
