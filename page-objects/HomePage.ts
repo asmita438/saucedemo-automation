@@ -13,7 +13,7 @@ export class HomePage {
         this.page = page;
         this.header = new Header(page);
         this.inventoryItems = page.locator('.inventory_item');
-        this.sortDropdown = page.locator('[data-test="product_sort_container"]');
+        this.sortDropdown = page.locator('select[data-test="product-sort-container"]');
         this.productTitle = page.locator('.inventory_item_name');
         this.productPrice = page.locator('.inventory_item_price');
       }
