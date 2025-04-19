@@ -31,10 +31,10 @@ test.describe('Checkout Process', () => {
     await checkoutPage.waitForCheckoutStepOne();
     await checkoutPage.fillShippingInfo(firstName, lastName, postalCode);
     
-    // Verify navigation to checkout step two
+    
     await checkoutPage.waitForCheckoutStepTwo();
     
-    // Complete the order
+    
     await checkoutPage.completeOrder();
     
     // Verify order completion
@@ -45,7 +45,7 @@ test.describe('Checkout Process', () => {
     const checkoutPage = new CheckoutPage(page);
     
     await checkoutPage.waitForCheckoutStepOne();
-    // Try to continue without filling info
+    
     await checkoutPage.continueButton.click();
     
     // Verify error message
@@ -59,12 +59,12 @@ test.describe('Checkout Process', () => {
     await checkoutPage.fillShippingInfo('John', 'Doe', '12345');
     await checkoutPage.waitForCheckoutStepTwo();
     
-    // Get price values
+    
     const subtotal = await checkoutPage.getSubtotal();
     const tax = await checkoutPage.getTax();
     const total = await checkoutPage.getTotal();
     
-    // Verify total calculation (allowing for small rounding differences)
+    
     expect(Math.abs((subtotal + tax) - total)).toBeLessThan(0.01);
   });
 });
