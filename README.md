@@ -99,23 +99,23 @@ This project uses Playwright fixtures for:
 1. Test data management (`testData` fixture)
 
 ## Test Coverage
-# Login Tests
+### Login Tests
 - Should login successfully with valid credentials
 - Should show error with invalid credentials
 - Should show error for locked out user
 
-# Inventory Page Tests
+### Inventory Page Tests
 - Should display all inventory items
 - Should add product to cart
 - Should sort products by price (low to high)
 
-# Cart Tests
+### Cart Tests
 
 - Should display correct items in cart
 - Should remove item from cart
 - Should navigate from cart to checkout
 
-# Checkout Tests
+### Checkout Tests
 
 - Should complete checkout process successfully
 - Should show error with empty checkout information
