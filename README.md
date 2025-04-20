@@ -26,7 +26,7 @@ This project contains automated tests for the [SauceDemo](https://www.saucedemo.
 1. Clone this repository:
    ```
    git clone https://github.com/asmita438/saucedemo-automation
-   cd saucedemo-test-suite
+   cd saucedemo-automation
    ```
 
 2. Install dependencies:
