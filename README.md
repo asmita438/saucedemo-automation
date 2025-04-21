@@ -54,6 +54,13 @@ npm run test:headed
 Run tests with UI mode:
 ```
 npm run test:ui
+
+**Note about UI Mode:** When using UI mode, you'll initially see a blank browser window. To view test execution:
+1. Select a specific test case from the left panel
+2. Click the "Run" button at the top
+3. The browser content will then appear as the test executes
+4. You can use the trace viewer to analyze test execution afterward
+
 ```
 
 Run specific test suites:
@@ -62,7 +69,7 @@ npm run test:login
 npm run test:inventory
 npm run test:cart
 npm run test:checkout
-npm run test:fixture
+
 ```
 
 Run tests in a specific browser:
